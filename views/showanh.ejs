@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% include css %>
+    <title>Trang show</title>
+</head>
+<body class="container">
+<%- include nav %>
+<article>
+    <h1 class="text-lg-start p-2"><%= data.tenAnh%></h1>
+    <p class="text-lg-start"><%= data.ndAnh%></p>
+    <img src="<%= data.linkAnh%>">
+    <br>
+    <button class="mt-3 btn-close-white buttonstyle" type="submit">Download</button>
+</article>
+<aside>
+<form>
+    <input class="mt-5 inputstyle" type="search" name="otimkiem" placeholder="Seach this blog">
+    <button class="btn-close-white buttonstyle" type="submit">Search</button>
+</form>
+</aside>
+
+</body>

@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  text-align: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.box{
+  margin: 25px;
+  color: white;
+  width: 360px;
+  box-shadow: 1px 1px 1px 1px #0c0c0c;
+
+}
+.color-nav{
+  background-color: black;
+}
+.text-color{
+  color: white;
+}
+.sizeimg{
+  /*width: 380px;*/
+
+}
+article{
+  width: 60%;
+  float: left;
+}
+aside{
+  width:40% ;
+  float: right;
+}
+.inputstyle{
+  width: 200px;
+  height: 40px;
+}
+.buttonstyle{
+  width: 80px;
+  height: 40px;
+}
