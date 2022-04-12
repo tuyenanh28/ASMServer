@@ -79,20 +79,15 @@ router.post('/uploadss', async function (req,res) {
 router.post('/uploadsss', async function (req,res) {
   var tenAnh3 = req.body.tenAnh;
   console.log(tenAnh3);
-
-
-
-  console.log('Đã xóa')
-
   const filter = {tenAnh: tenAnh3};
-  let xoa = await Student.findOneAndDelete(filter, function (error) {
-    console.log(error)
-    console.log("xóa thành công");
-  })
-  res.render('xoa', {
-    title: 'xoa',
-    message: 'Đã xóa'
-  })
+const checkTT = await Student.findOne(filter);
+console.log(checkTT);
+let xoa = await Student.deleteOne({_id:checkTT._id});
+if(!xoa){
+  return console.log("Error");
+}
+console.log("đã xóa");
+return  res.render('xoa', {title: 'Xóa Ảnh', message: " Xóa Thành Công !"})
 });
 
 router.get('/xem',function (req,res) {
