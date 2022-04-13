@@ -4,7 +4,8 @@ var fs = require('fs')
 const url = require('url')
 
 //mongo
-var db = 'mongodb+srv://admin:bfbzjC57bseMmBsT@cluster0.nz34l.mongodb.net/Lab8?retryWrites=true&w=majority'
+//thay link mongoose ở đây nhé !
+var db = 'mongodb+srv://admin:vv26suybzyX9E6XG@cluster0.bbvmc.mongodb.net/ASM?retryWrites=true&w=majority'
 const mongoose = require('mongoose');
 const e = require("express");
 mongoose.connect(db).catch(error =>{
