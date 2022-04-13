@@ -9,7 +9,7 @@ a {
 }
 .box{
   margin: 35px;
-  color: white;
+  color: black;
   width: 370px;
   box-shadow: 1px 1px 1px 0px #0c0c0c;
 
@@ -39,4 +39,5 @@ aside{
 .buttonstyle{
   width: 80px;
   height: 40px;
+  color: black;
 }
